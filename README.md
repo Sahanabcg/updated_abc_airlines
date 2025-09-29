@@ -151,7 +151,13 @@ curl -X GET "http://localhost:8000/api/v1/main_api/luggages/reached/1" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
-### 5. Admin: Get All In-Transit Luggage
+### 5. Customer Lookup by Tracking Event
+```bash
+curl -X GET "http://localhost:8000/api/v1/main_api/customer_lookup/1" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
+### 6. Admin: Get All In-Transit Luggage
 ```bash
 curl -X GET "http://localhost:8000/api/v1/main_api/status_by_luggage/intransit" \
   -H "Authorization: Bearer ADMIN_JWT_TOKEN"
